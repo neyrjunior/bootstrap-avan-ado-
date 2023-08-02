@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - NavBar</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+        .nav-link {
+            text-align: center;
+        }
+        section {
+            height: 100vh;
+            background-color: lightgray;
+            padding-top: 73px;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <h1>Titulo</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#promocoes">Ptomoçoes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="cabecalho">
+            <section id="inicio">
+                <h2>Inicio</h2>
+            </section>
+            <section id="produto">
+                <h2>Produtos</h2>
+            </section>
+            <section id="promocoes">
+                <h2>Promoçoes</h2>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+            </section>
+        </div>
+    </div>
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
